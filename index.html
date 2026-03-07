@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 14: Life Below Water | AKS University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="aks.png" alt="AKS University Logo" class="header-logo">
+    </header>
+
+    <section class="hero">
+        <h1>Sustainable Development Goal 14</h1>
+        <p>Engineering Perspective on Life Below Water</p>
+    </section>
+
+    <div class="poster-container">
+        <div class="poster-frame">
+            <img src="poster.png" alt="SDG 14 Poster">
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>The Mission: Life Below Water</h2>
+            <p>Sustainable Development Goal 14 aims to conserve and sustainably use the oceans, seas, and marine resources for sustainable development. Oceans provide key natural resources including food, medicines, and biofuels.</p>
+            <p>However, marine pollution—mostly from land-based activities—is reaching alarming levels, with an average of 13,000 pieces of plastic litter found on every square kilometer of ocean.</p>
+        </div>
+
+        <div class="card">
+            <h2>Engineering the Solution</h2>
+            <p>As <strong>Mechanical Engineering</strong> students, we apply our technical knowledge to design systems that can protect our aquatic ecosystems:</p>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <strong>⚙️ Waste Interceptors</strong>
+                    <p>Designing automated conveyor systems and floating barriers to collect debris before it enters the deep sea.</p>
+                </div>
+                <div class="info-box">
+                    <strong>🔋 Green Propulsion</strong>
+                    <p>Developing energy-efficient marine engines and electric propulsion to reduce carbon emissions and oil spills.</p>
+                </div>
+                <div class="info-box">
+                    <strong>🤖 Ocean Robotics</strong>
+                    <p>Utilizing fluid mechanics to design drones and AUVs (Autonomous Underwater Vehicles) for cleaning microplastics.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card pledge-section">
+            <h3>Take the Sustainability Pledge</h3>
+            <p>Join our initiative to reduce plastic waste and protect marine life.</p>
+            <button id="pledgeBtn">I Pledge to Protect Oceans</button>
+            <p id="pledgeMessage" style="display:none; color: var(--deep-blue); font-weight: bold; margin-top: 15px;">
+                Thank you! You have successfully joined the AKS University movement for a cleaner ocean. 🌊
+            </p>
+        </div>
+
+        <div class="team-card">
+            <div class="dept-title">B.Tech Mechanical Engineering 2nd Sem 2025-2029</div>
+            <h3>Project Group Members</h3>
+            <div class="member-grid">
+                <div class="member"><strong>Student Name 1</strong><br><span>ID: ME-01</span></div>
+                <div class="member"><strong>Student Name 2</strong><br><span>ID: ME-02</span></div>
+                <div class="member"><strong>Student Name 3</strong><br><span>ID: ME-03</span></div>
+                <div class="member"><strong>Student Name 4</strong><br><span>ID: ME-04</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 AKS University, Satna | Faculty of Engineering & Technology </footer>
+
+    <script>
+        // Pledge Button Logic
+        document.getElementById('pledgeBtn').addEventListener('click', function() {
+            this.style.display = 'none';
+            document.getElementById('pledgeMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
