@@ -4,84 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDG 14: Life Below Water | AKS University</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <img src="aks.png" alt="AKS University Logo" class="header-logo">
+        <img src="aks.png" alt="AKS Logo" class="header-logo">
     </header>
 
     <section class="hero">
         <h1>Sustainable Development Goal 14</h1>
-        <p>Engineering Perspective on Life Below Water</p>
+        <h2 class="sub-title">Life Below Water</h2>
     </section>
 
     <div class="poster-container">
         <div class="poster-frame">
-            <img src="poster.png" alt="SDG 14 Poster">
+            <img src="poster.png" alt="Poster">
         </div>
     </div>
 
     <div class="container">
         
-        <div class="card">
-            <h2>The Mission: Life Below Water</h2>
-            <p>Sustainable Development Goal 14 aims to conserve and sustainably use the oceans, seas, and marine resources for sustainable development. Oceans provide key natural resources including food, medicines, and biofuels.</p>
-            <p>However, marine pollution—mostly from land-based activities—is reaching alarming levels, with an average of 13,000 pieces of plastic litter found on every square kilometer of ocean.</p>
-        </div>
-
-        <div class="card">
-            <h2>Engineering the Solution</h2>
-            <p>As <strong>Mechanical Engineering</strong> students, we apply our technical knowledge to design systems that can protect our aquatic ecosystems:</p>
+        <div class="card info-card">
+            <h3>What is SDG 14?</h3>
+            <p>Sustainable Development Goal 14 aims to conserve and sustainably use the oceans, seas, and marine resources. Oceans cover 70% of our planet and are vital for human life.</p>
             
             <div class="info-grid">
-                <div class="info-box">
-                    <strong>⚙️ Waste Interceptors</strong>
-                    <p>Designing automated conveyor systems and floating barriers to collect debris before it enters the deep sea.</p>
+                <div class="info-item">
+                    <strong>Reduce Pollution</strong><br>Preventing plastic waste and chemicals from entering the sea.
                 </div>
-                <div class="info-box">
-                    <strong>🔋 Green Propulsion</strong>
-                    <p>Developing energy-efficient marine engines and electric propulsion to reduce carbon emissions and oil spills.</p>
+                <div class="info-item">
+                    <strong>Protect Ecosystems</strong><br>Restoring coral reefs and protecting marine biodiversity.
                 </div>
-                <div class="info-box">
-                    <strong>🤖 Ocean Robotics</strong>
-                    <p>Utilizing fluid mechanics to design drones and AUVs (Autonomous Underwater Vehicles) for cleaning microplastics.</p>
+                <div class="info-item">
+                    <strong>Sustainable Fishing</strong><br>Ending overfishing to maintain healthy fish populations.
                 </div>
             </div>
         </div>
 
-        <div class="card pledge-section">
-            <h3>Take the Sustainability Pledge</h3>
-            <p>Join our initiative to reduce plastic waste and protect marine life.</p>
-            <button id="pledgeBtn">I Pledge to Protect Oceans</button>
-            <p id="pledgeMessage" style="display:none; color: var(--deep-blue); font-weight: bold; margin-top: 15px;">
-                Thank you! You have successfully joined the AKS University movement for a cleaner ocean. 🌊
-            </p>
+        <div class="card">
+            <h3 style="text-transform: uppercase; letter-spacing: 2px; color: #666;">Global Pledge Counter</h3>
+            <span id="count" class="counter-number">0</span>
+            <p style="font-weight: bold; margin-bottom: 25px;">People have pledged to save the oceans!</p>
+            
+            <button id="pledgeBtn">COUNT ME IN! 🌊</button>
+
+            <div id="celebration" class="celebration-card">
+                <h2>YOU'RE A LEGEND! 🎊</h2>
+                <p>Thank you! You have successfully joined the AKS University movement for a cleaner ocean.</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: #16a085;">#SaveTheOcean #SDG14 #AKSU #LifeBelowWater</p>
+            </div>
+
+            <div class="ocean-waves">
+                <div class="wave"></div>
+            </div>
         </div>
 
         <div class="team-card">
-            <div class="dept-title">B.Tech Mechanical Engineering 2nd Sem 2025-2029</div>
-            <h3>Project Group Members</h3>
+            <div class="dept-title">B.Tech Mechanical Engineering <br> 2025-2029</div>
+            <h3>PROJECT TEAM</h3>
             <div class="member-grid">
-                <div class="member"><strong>Student Name 1</strong><br><span>ID: ME-01</span></div>
-                <div class="member"><strong>Student Name 2</strong><br><span>ID: ME-02</span></div>
-                <div class="member"><strong>Student Name 3</strong><br><span>ID: ME-03</span></div>
-                <div class="member"><strong>Student Name 4</strong><br><span>ID: ME-04</span></div>
+                <div class="member"><strong>Satyam Yadav</strong><br><span>B2555R10102020</span></div>
+                <div class="member"><strong>Priyanshu Kushwaha</strong><br><span>B2555R10102033</span></div>
+                <div class="member"><strong>Gaurav Kushwaha</strong><br><span>B2555R10102021</span></div>
             </div>
         </div>
 
     </div>
 
     <footer>
-        &copy; 2026 AKS University, Satna | Faculty of Engineering & Technology </footer>
+        <p><strong>AKS UNIVERSITY, SATNA</strong></p>
+        <p>Faculty of Engineering & Technology <br> Sustainable Development Project</p>
+    </footer>
 
-    <script>
-        // Pledge Button Logic
-        document.getElementById('pledgeBtn').addEventListener('click', function() {
-            this.style.display = 'none';
-            document.getElementById('pledgeMessage').style.display = 'block';
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database-compat.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
